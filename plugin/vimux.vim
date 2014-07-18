@@ -156,26 +156,26 @@ endfunction
 
 function! _VimuxTmuxIndex()
   if _VimuxRunnerType() == "pane"
-    return _VimuxTmuxPaneIndex()
+    return _VimuxTmuxPaneId()
   else
-    return _VimuxTmuxWindowIndex()
+    return _VimuxTmuxWindowId()
   end
 endfunction
 
-function! _VimuxTmuxPaneIndex()
-  return _VimuxTmuxProperty("#I.#P")
+function! _VimuxTmuxPaneId()
+  return _VimuxTmuxProperty("#{pane_id}")
 endfunction
 
-function! _VimuxTmuxWindowIndex()
-  return _VimuxTmuxProperty("#I")
+function! _VimuxTmuxWindowId()
+  return _VimuxTmuxProperty("#{window_id}")
 endfunction
 
 function! _VimuxNearestIndex()
   let views = split(_VimuxTmux("list-"._VimuxRunnerType()."s"), "\n")
 
   for view in views
-    if match(view, "(active)") == -1
-      return split(view, ":")[0]
+    if match(view, "1:") == -1
+      return split(view, ":")[1]
     endif
   endfor
 
