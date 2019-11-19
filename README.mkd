@@ -12,7 +12,7 @@ upstream see http://github.com/benmills/vimux.
 
 The following Pull Requests are included in this fork:
 
- - [#110 Use IDs instead of indexes to identify the Runner (thanks to yunake)](https://github.com/benmills/vimux/pull/110)
+ - ~~[#110 Use IDs instead of indexes to identify the Runner (thanks to yunake)](https://github.com/benmills/vimux/pull/110)~~ (This has been reverted. It doesn't work anymore with the current state of the plugin)
  - [#142 Tab now autocompletes in the VimuxPromptOption (thanks to thalesmello)](https://github.com/benmills/vimux/pull/142)
  - [#164 Update README.mkd (thanks to reduxionist)](https://github.com/benmills/vimux/pull/164)
  - [#170 Update README.mkd (thanks to saubhik)](https://github.com/benmills/vimux/pull/170)
