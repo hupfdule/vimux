@@ -2,6 +2,23 @@
 
 Easily interact with tmux from vim.
 
+---
+
+## Changes to upstream
+
+This is not the upstream source. It's a fork to fix some bugs that are not
+incorporated into upstream yet. If you are searching for the non-patched
+upstream see http://github.com/benmills/vimux.
+
+The following Pull Requests are included in this fork:
+
+ - [#110 Use IDs instead of indexes to identify the Runner (thanks to yunake)](https://github.com/benmills/vimux/pull/110)
+ - [#142 Tab now autocompletes in the VimuxPromptOption (thanks to thalesmello)](https://github.com/benmills/vimux/pull/142)
+ - [#164 Update README.mkd (thanks to reduxionist)](https://github.com/benmills/vimux/pull/164)
+ - [#170 Update README.mkd (thanks to saubhik)](https://github.com/benmills/vimux/pull/170)
+
+---
+
 ![vimux](https://www.braintreepayments.com/blog/content/images/blog/vimux3.png)
 
 What inspired me to write vimux was [tslime.vim](https://github.com/kikijump/tslime.vim), a plugin that lets you send input to tmux. While tslime.vim works well, I felt it wasn't optimized for my primary use case which was having a smaller tmux pane that I would use to run tests or play with a REPL.
